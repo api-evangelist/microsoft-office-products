@@ -1,10 +1,11 @@
+aid: microsoft-office-products
 name: Microsoft Office Products
 description: API catalog for Microsoft Office product suite including Word, Excel, PowerPoint, Outlook, and Teams
 image: https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2020/04/Microsoft-365.png
 created: '2024-01-15'
-modified: '2024-01-15'
-url: https://apis.microsoft.com/office
-specificationVersion: '0.18'
+modified: '2026-03-16'
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-office-products/refs/heads/main/apis.yml
+specificationVersion: '0.19'
 apis:
 - name: Microsoft Graph API
   description: Unified API endpoint for accessing Microsoft 365 services including Office applications
@@ -142,9 +143,8 @@ common:
 - type: Status
   url: https://status.dev.microsoft.com/
 maintainers:
-- name: Microsoft
-  email: support@microsoft.com
-  url: https://developer.microsoft.com/
+- FN: Kin Lane
+  email: kin@apievangelist.com
 tags:
 - Microsoft
 - Office
