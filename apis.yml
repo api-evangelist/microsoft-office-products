@@ -48,7 +48,7 @@ apis:
         url: https://learn.microsoft.com/en-us/javascript/api/word
       - type: Samples
         url: https://github.com/OfficeDev/Office-Add-in-samples
-      - type: Quick Start
+      - type: GettingStarted
         url: https://learn.microsoft.com/en-us/office/dev/add-ins/quickstarts/word-quickstart
   - name: Excel JavaScript API
     description: >-
@@ -82,7 +82,7 @@ apis:
         url: https://learn.microsoft.com/en-us/javascript/api/powerpoint
       - type: Samples
         url: https://github.com/OfficeDev/PowerPoint-Add-in-samples
-      - type: Quick Start
+      - type: GettingStarted
         url: https://learn.microsoft.com/en-us/office/dev/add-ins/quickstarts/powerpoint-quickstart
   - name: Outlook JavaScript API
     description: >-
