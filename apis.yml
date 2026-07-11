@@ -139,6 +139,8 @@ apis:
       - type: Webhooks
         url: https://learn.microsoft.com/en-us/graph/api/resources/webhooks
 common:
+  - type: OAuthScopes
+    url: scopes/microsoft-office-products-scopes.yml
   - type: Portal
     url: https://developer.microsoft.com/en-us/microsoft-365
   - type: Authentication
