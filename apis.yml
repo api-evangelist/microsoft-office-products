@@ -139,6 +139,12 @@ apis:
       - type: Webhooks
         url: https://learn.microsoft.com/en-us/graph/api/resources/webhooks
 common:
+  - type: VulnerabilityDisclosure
+    url: security/microsoft-office-products-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/microsoft-office-products-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-office-products-authentication.yml
   - type: OAuthScopes
     url: scopes/microsoft-office-products-scopes.yml
   - type: Portal
