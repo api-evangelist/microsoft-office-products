@@ -139,6 +139,8 @@ apis:
       - type: Webhooks
         url: https://learn.microsoft.com/en-us/graph/api/resources/webhooks
 common:
+  - type: AgenticAccess
+    url: agentic-access/microsoft-office-products-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/microsoft-office-products-vulnerability-disclosure.yml
   - type: DomainSecurity
