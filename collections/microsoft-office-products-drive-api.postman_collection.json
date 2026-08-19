@@ -1,0 +1,568 @@
+{
+  "item": [
+    {
+      "id": "b45f3725-9836-402d-887c-64e017f128c4",
+      "name": "Drive",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "34c6b933-30a2-42ab-a12d-096fd6dddcd2",
+          "name": "Get the signed-in user's OneDrive",
+          "request": {
+            "name": "Get the signed-in user's OneDrive",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "drive"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cf541483-7d3f-4a97-8329-7613dc574115",
+              "name": "Drive",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "drive"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"driveType\": \"string\",\n  \"owner\": {},\n  \"quota\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "33822bc8-7ed8-4d3c-a955-e8a191dc7aa0",
+          "name": "List items in the root of the user's drive",
+          "request": {
+            "name": "List items in the root of the user's drive",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "drive",
+                "root",
+                "children"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4cb9f727-04e0-4b97-bcc4-6b150dc22851",
+              "name": "Collection of driveItems",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "drive",
+                    "root",
+                    "children"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"value\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"size\": 6886,\n      \"file\": {},\n      \"folder\": {},\n      \"createdDateTime\": \"1950-07-03T02:49:53.007Z\",\n      \"lastModifiedDateTime\": \"1973-04-02T17:39:58.734Z\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"size\": 7813,\n      \"file\": {},\n      \"folder\": {},\n      \"createdDateTime\": \"1971-11-07T12:24:32.813Z\",\n      \"lastModifiedDateTime\": \"1959-04-07T23:47:23.149Z\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d1af85c2-5ca4-4749-8c5f-3b6e6df23118",
+          "name": "Get a driveItem by id",
+          "request": {
+            "name": "Get a driveItem by id",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "drive",
+                "items",
+                ":item_id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "item_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "82294160-4b13-4e1e-967c-3c79f91ee3a0",
+              "name": "DriveItem",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "drive",
+                    "items",
+                    ":item_id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "item_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"size\": 9291,\n  \"file\": {},\n  \"folder\": {},\n  \"createdDateTime\": \"1973-11-22T10:48:55.804Z\",\n  \"lastModifiedDateTime\": \"1969-01-15T05:28:00.375Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7b6ddfc2-5cab-4913-abfe-f523336d6cdd",
+          "name": "Download a driveItem's content",
+          "request": {
+            "name": "Download a driveItem's content",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "drive",
+                "items",
+                ":item_id",
+                "content"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "item_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/octet-stream"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9f107e83-726a-4e75-85b8-98335170d139",
+              "name": "File content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "drive",
+                    "items",
+                    ":item_id",
+                    "content"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "item_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/octet-stream"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/octet-stream"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "3ad812fc-1cff-46b1-a9bc-4e3ea6c68690",
+              "name": "Redirect to a pre-authenticated download URL",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "drive",
+                    "items",
+                    ":item_id",
+                    "content"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "item_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Found",
+              "code": 302,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c5d3047e-b1e6-4661-a701-23b86be5cc29",
+          "name": "Upload content to an existing driveItem",
+          "request": {
+            "name": "Upload content to an existing driveItem",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "drive",
+                "items",
+                ":item_id",
+                "content"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "item_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/octet-stream"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<binary>"
+            }
+          },
+          "response": [
+            {
+              "id": "1d0b9151-6a72-44f9-8c3f-ae32d84a08cb",
+              "name": "Updated driveItem",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "drive",
+                    "items",
+                    ":item_id",
+                    "content"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "item_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<binary>"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"size\": 9291,\n  \"file\": {},\n  \"folder\": {},\n  \"createdDateTime\": \"1973-11-22T10:48:55.804Z\",\n  \"lastModifiedDateTime\": \"1969-01-15T05:28:00.375Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://graph.microsoft.com/v1.0",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "Mail.Read Mail.Send Files.Read Files.ReadWrite Team.ReadBasic.All ChannelMessage.Send User.Read"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/token"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "a242a294-74d4-4e8c-aa6b-7d6808625e07",
+    "name": "Microsoft Graph API - Office Products Drive API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A subset of Microsoft Graph v1.0 endpoints used to interact with Microsoft Office 365 services - Outlook mail, OneDrive files, and Microsoft Teams. Microsoft Graph is the unified REST API for Microsoft 365 services and uses OAuth 2.0 (Microsoft Entra ID) for authentication.",
+      "type": "text/plain"
+    }
+  }
+}
