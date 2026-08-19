@@ -20,7 +20,7 @@ image: https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sit
 created: '2024-01-15'
 modified: '2026-04-28'
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-office-products/refs/heads/main/apis.yml
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - name: Word JavaScript API
   description: API for building add-ins and automating Microsoft Word.
