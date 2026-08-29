@@ -3,6 +3,18 @@ name: Microsoft Office Products
 description: >-
   API catalog for Microsoft Office product suite including Word, Excel, PowerPoint,
   Outlook, and Teams.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
