@@ -46,7 +46,7 @@ apis:
   properties:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/javascript/api/word
-  - type: Samples
+  - type: Examples
     url: https://github.com/OfficeDev/Office-Add-in-samples
   - type: GettingStarted
     url: https://learn.microsoft.com/en-us/office/dev/add-ins/quickstarts/word-quickstart
@@ -65,7 +65,7 @@ apis:
     url: https://learn.microsoft.com/en-us/javascript/api/excel
   - type: REST API
     url: https://learn.microsoft.com/en-us/graph/api/resources/excel
-  - type: Samples
+  - type: Examples
     url: https://github.com/OfficeDev/Excel-Add-in-samples
   - type: Tutorial
     url: https://learn.microsoft.com/en-us/office/dev/add-ins/tutorials/excel-tutorial
@@ -80,7 +80,7 @@ apis:
   properties:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/javascript/api/powerpoint
-  - type: Samples
+  - type: Examples
     url: https://github.com/OfficeDev/PowerPoint-Add-in-samples
   - type: GettingStarted
     url: https://learn.microsoft.com/en-us/office/dev/add-ins/quickstarts/powerpoint-quickstart
@@ -98,7 +98,7 @@ apis:
     url: https://learn.microsoft.com/en-us/javascript/api/outlook
   - type: REST API
     url: https://learn.microsoft.com/en-us/graph/api/resources/mail-api-overview
-  - type: Samples
+  - type: Examples
     url: https://github.com/OfficeDev/Outlook-Add-in-samples
   - type: Patterns
     url: https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/outlook-addin-design
