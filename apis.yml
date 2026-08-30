@@ -151,7 +151,7 @@ apis:
   name: Microsoft Office Products Drive API
   description: The Drive API from Microsoft Office Products — 4 operation(s) for drive.
   tags:
-  - Drives
+  - Drive
   tags_raw:
   - Drive
   properties:
