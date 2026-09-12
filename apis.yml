@@ -200,6 +200,8 @@ apis:
   - type: ChangeLog
     url: https://learn.microsoft.com/en-us/graph/changelog
 common:
+  - type: Website
+    url: https://www.microsoft.com/
   - type: AgenticAccess
     url: agentic-access/microsoft-office-products-agentic-access.yml
   - type: VulnerabilityDisclosure
@@ -239,3 +241,5 @@ tags_raw:
   - Office
   - Productivity
   - SaaS
+x-parent: microsoft
+x-relationship: product
