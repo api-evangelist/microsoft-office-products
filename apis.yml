@@ -31,7 +31,7 @@ accessModel:
 image: ''
 created: '2024-01-15'
 modified: '2026-04-28'
-url: https://raw.githubusercontent.com/api-evangelist/microsoft-office-products/refs/heads/main/apis.yml
+url: https://developer.microsoft.com/en-us/microsoft-365
 specificationVersion: '0.23'
 apis:
 - name: Word JavaScript API
@@ -241,5 +241,5 @@ tags_raw:
   - Office
   - Productivity
   - SaaS
-x-parent: microsoft
+x-parent: microsoft-365
 x-relationship: product
